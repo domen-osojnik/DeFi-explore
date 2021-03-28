@@ -1,0 +1,17 @@
+﻿<Window x:Class="DeFiExplore.Wallet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeFiExplore"
+        mc:Ignorable="d"
+        Title="Wallet" Height="450" Width="800" Background="Orange">
+    <Grid>
+        <Button x:Name="button" Content="Deposit" HorizontalAlignment="Left" Margin="68,128,0,0" VerticalAlignment="Top" Width="114" Height="37"/>
+        <Button x:Name="button1" Content="Exchange" HorizontalAlignment="Left" Margin="211,128,0,0" VerticalAlignment="Top" Width="114" Height="37"/>
+        <Label x:Name="label" Content="My Wallet" HorizontalAlignment="Left" Margin="314,26,0,0" VerticalAlignment="Top" FontSize="30" RenderTransformOrigin="0.876,0.115" FontWeight="DemiBold"/>
+        <Button x:Name="bckButto" Content="Back" HorizontalAlignment="Left" Margin="659,355,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="label1" Content="Currency" HorizontalAlignment="Left" Margin="68,187,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

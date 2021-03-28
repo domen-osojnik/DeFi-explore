@@ -1,0 +1,30 @@
+﻿<Window x:Class="DeFiExplore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeFiExplore"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="780" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox Grid.Row="0" Grid.Column="0" FontSize="25">
+            <ComboBoxItem IsSelected="true">BTC/USDT</ComboBoxItem>
+            <ComboBoxItem>ETH/USDT</ComboBoxItem>
+            <ComboBoxItem>ADA/USDT</ComboBoxItem>
+            <ComboBoxItem>DOGE/USDT</ComboBoxItem>
+        </ComboBox>
+
+        <Button x:Name="btnShow" Grid.Column="1" Grid.Row="0" Click="btnShow_Click" Content="Prikazi"/>
+        <DataGrid x:Name="dataGrid" ColumnWidth="130" Grid.Row="1" Grid.ColumnSpan="2"  />
+        <StackPanel x:Name="stkPanel" Grid.Row="2" Grid.ColumnSpan="2" Orientation="Vertical" />
+    </Grid>
+</Window>

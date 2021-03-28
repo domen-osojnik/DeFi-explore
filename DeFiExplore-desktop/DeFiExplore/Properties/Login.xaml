@@ -1,0 +1,18 @@
+﻿<Window x:Class="DeFiExplore.Properties.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeFiExplore.Properties"
+        mc:Ignorable="d"
+        Title="Login" Height="300" Width="300" Background="Black">
+    <Grid>
+        <Label x:Name="User" Content="Uporabnik:" HorizontalAlignment="Left" Margin="79,85,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.208,1.731" FontWeight="Bold" Foreground="Orange" />
+        <Button x:Name="BtnLogin" Content="Login" HorizontalAlignment="Left" Margin="79,198,0,0" VerticalAlignment="Top" Width="120" Height="27" Background="DarkOrange" FontWeight="Bold" Click="BtnLogin_Click" />
+        <Label x:Name="Pass" Content="Geslo:" HorizontalAlignment="Left" Margin="79,134,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Orange"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="79,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="79,160,0,0" VerticalAlignment="Top" Width="120" />
+        <Image x:Name="___DeFiExplore_component_Image1_png" Margin="79,23,93,197" Source="/DeFiExplore;component/Image1.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>
